@@ -98,8 +98,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto"
           >
-            A passionate full-stack developer crafting beautiful and functional
-            web experiences
+            MERN Stack Developer | Hackathon Winner | GDGoC Lead
           </motion.p>
 
           <motion.div
@@ -131,9 +130,7 @@ const Hero = () => {
               <FaLinkedin className="text-2xl" />
             </motion.a>
             <motion.a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:premjadhav00002@gmail.com"
               className="bg-white/10 backdrop-blur-sm p-3 rounded-full text-white hover:bg-white/20 transition-colors"
               whileHover={{ scale: 1.1, rotate: 360 }}
               whileTap={{ scale: 0.9 }}

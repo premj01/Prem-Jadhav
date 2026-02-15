@@ -45,8 +45,19 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      // Replace with your actual form submission logic
-      await new Promise((resolve) => setTimeout(resolve, 1500)); // Simulated API call
+      // Create Gmail compose link with form data
+      const subject = encodeURIComponent(`Portfolio Contact: Message from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      
+      // Gmail compose URL
+      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=premjadhav00002@gmail.com&su=${subject}&body=${body}`;
+      
+      // Open Gmail in new tab
+      window.open(gmailLink, '_blank');
+      
+      // Show redirect message and clear form
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -72,16 +83,16 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: FaGithub, url: "https://github.com/yourusername", label: "GitHub" },
+    { icon: FaGithub, url: "https://github.com/premj01", label: "GitHub" },
     {
       icon: FaLinkedin,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/premj01",
       label: "LinkedIn",
     },
     {
-      icon: FaTwitter,
-      url: "https://twitter.com/yourusername",
-      label: "Twitter",
+      icon: FaEnvelope,
+      url: "mailto:premjadhav00002@gmail.com",
+      label: "Email",
     },
   ];
 
@@ -219,7 +230,7 @@ const Contact = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="text-green-500 text-center mt-4"
                 >
-                  Message sent successfully!
+                  Redirected to Gmail! Please send the email from there.
                 </motion.p>
               )}
 
@@ -248,8 +259,8 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-gray-400 mb-6">
-                Whether you have a project in mind or just want to chat, I'm
-                always open to discussing new opportunities and ideas.
+                I'm always open to discussing new projects, creative ideas, or 
+                opportunities to be part of your vision. Feel free to reach out!
               </p>
               <div className="flex flex-wrap gap-4">
                 {socialLinks.map((social, index) => (
@@ -278,10 +289,17 @@ const Contact = () => {
                   I typically respond within 24 hours. For urgent matters, you
                   can also reach me directly at{" "}
                   <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:premjadhav00002@gmail.com"
                     className="text-indigo-400 hover:text-indigo-300 transition-colors"
                   >
-                    your.email@example.com
+                    premjadhav00002@gmail.com
+                  </a>
+                  {" "}or call at{" "}
+                  <a
+                    href="tel:+917620349964"
+                    className="text-indigo-400 hover:text-indigo-300 transition-colors"
+                  >
+                    +91 7620349964
                   </a>
                 </p>
               </div>

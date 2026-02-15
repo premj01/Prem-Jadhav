@@ -12,44 +12,47 @@ import {
 
 const projects = [
   {
-    title: "Study Planner",
-    description: "AI-powered study planning application for students",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    github: "https://github.com/premj01/Study-Planner",
-    demo: "https://study-planner-demo.vercel.app",
-    videoId: "XilwOyj5dns",
-    features: ["Calendar", "Task Management", "Progress Tracking"],
-    gradient: "from-purple-500/20 to-pink-500/20",
-    accent: "purple",
-    stars: 15,
-    status: "active",
-    ai: true,
-  },
-  {
-    title: "WhatsApp Clone",
-    description: "Real-time messaging app with media sharing",
-    technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
-    github: "https://github.com/premj01/whatsapp-clone",
-    demo: "https://whatsapp-clone-demo.vercel.app",
-    videoId: "Nr7zmMT1KD0",
-    features: ["Real-time Chat", "Auth", "Media Sharing"],
-    gradient: "from-green-500/20 to-blue-500/20",
-    accent: "green",
-    stars: 25,
+    title: "PrintGo",
+    description: "Automated self-service printing kiosk with QR scanning and payment integration",
+    technologies: ["React", "Node.js", "MongoDB", "Payment Gateway"],
+    github: "https://github.com/premj01/PrintGo",
+    demo: "https://printgo-demo.vercel.app",
+    videoId: "TxBCVHh21D8",
+    image: null,
+    features: ["QR Scanning", "Document Upload", "Payment Integration", "24/7 Access"],
+    gradient: "from-blue-500/20 to-cyan-500/20",
+    accent: "blue",
+    stars: 20,
     status: "active",
     ai: false,
   },
   {
-    title: "YT Summarizer",
-    description: "AI-powered YouTube video summarizer",
-    technologies: ["React", "NextUI", "Express.js", "MySQL"],
-    github: "https://github.com/premj01/YT-Video-Summarizer",
-    demo: "https://yt-summarizer-demo.vercel.app",
-    videoId: "G3iNiOys5l8",
-    features: ["Transcript Gen", "AI Summary", "Multi-Lang"],
-    gradient: "from-red-500/20 to-orange-500/20",
-    accent: "red",
+    title: "Make My Study Plan",
+    description: "AI-powered study planner with personalized schedules and progress tracking",
+    technologies: ["React", "Node.js", "MongoDB", "AI/LLM"],
+    github: "https://github.com/premj01/Make-My-Study-Plan",
+    demo: "https://make-my-plan.vercel.app/",
+    videoId: "XilwOyj5dns",
+    image: null,
+    features: ["AI Planning", "Custom Schedules", "Progress Tracking", "Difficulty Levels"],
+    gradient: "from-purple-500/20 to-pink-500/20",
+    accent: "purple",
     stars: 35,
+    status: "active",
+    ai: true,
+  },
+  {
+    title: "Custom WhatsApp Bot",
+    description: "WhatsApp bot with AI-powered features and command support",
+    technologies: ["Node.js", "WhatsApp API", "LLM", "Express"],
+    github: "https://github.com/premj01/WhatsAppBot_AI",
+    demo: "https://github.com/premj01/WhatsAppBot_AI",
+    videoId: null,
+    image: "/whatsappbot_image.jpg",
+    features: ["URL Shortening", "YT Summarization", "AI Q&A", "Command Support"],
+    gradient: "from-green-500/20 to-emerald-500/20",
+    accent: "green",
+    stars: 25,
     status: "active",
     ai: true,
   },
@@ -173,15 +176,23 @@ const ProjectSlider = () => {
               className="absolute w-[70%] h-full left-1/2 -translate-x-1/2"
             >
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col md:flex-row gap-6">
-                {/* Video Section */}
+                {/* Video/Image Section */}
                 <div className="w-full md:w-2/3 aspect-video rounded-lg overflow-hidden">
-                  <iframe
-                    src={getYouTubeEmbedUrl(projects[currentIndex].videoId)}
-                    title={projects[currentIndex].title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                  />
+                  {projects[currentIndex].videoId ? (
+                    <iframe
+                      src={getYouTubeEmbedUrl(projects[currentIndex].videoId)}
+                      title={projects[currentIndex].title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  ) : (
+                    <img
+                      src={projects[currentIndex].image}
+                      alt={projects[currentIndex].title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
 
                 {/* Content Section */}

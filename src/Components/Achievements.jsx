@@ -24,60 +24,62 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: "Best Project Award",
-      category: "awards",
+      title: "Build and Grow Hackathon Winner",
+      category: "competitions",
       description:
-        "Secured first place for the innovative AI-powered Study Planner project",
-      date: "2023",
-      organization: "Pune University",
-      link: "https://example.com/award",
-      icon: FaAward,
+        "Winner (Pune) & Finalist (Mumbai) for building EduGen, an agentic GenUI microservice platform for dynamic UI generation",
+      date: "January 2026",
+      organization: "Google Cloud Community",
+      link: "https://www.linkedin.com/posts/gdg-cloud-pune_gdgcloudpune-gdgcloudmumbai-hackathon-ugcPost-7422531295605374978-loEw?utm_source=social_share_send&utm_medium=member_desktop_web",
+      icon: FaTrophy,
       color: "#F59E0B", // amber
     },
     {
       id: 2,
-      title: "AWS Certified Developer",
-      category: "certifications",
+      title: "Hacktoberfest Hackathon Winner",
+      category: "competitions",
       description:
-        "Professional certification for AWS cloud development and architecture",
-      date: "2023",
-      organization: "Amazon Web Services",
-      link: "https://example.com/cert",
-      icon: FaCertificate,
+        "First Prize Winner for building an AI-powered legal document analyzer to identify contractual obligations, promises, and risks",
+      date: "October 2025",
+      organization: "DigitalOcean",
+      link: "https://www.linkedin.com/posts/premj01_hacktoberfest2025-pune-punetech-activity-7380922912221872129-Dl2D?utm_source=share&utm_medium=member_desktop",
+      icon: FaTrophy,
       color: "#3B82F6", // blue
     },
     {
       id: 3,
-      title: "National Coding Champion",
-      category: "competitions",
-      description: "Won first place in national-level coding competition",
-      date: "2022",
-      organization: "TechFest 2022",
-      link: "https://example.com/competition",
-      icon: FaMedal,
+      title: "GDGoC Lead - Web Development",
+      category: "awards",
+      description:
+        "Leading web development initiatives and executing campus technical events including HackNova Hackathon",
+      date: "July 2025 - Present",
+      organization: "Google Developer Group on Campus",
+      link: null,
+      icon: FaAward,
       color: "#10B981", // emerald
     },
     {
       id: 4,
-      title: "React Development Expert",
-      category: "certifications",
+      title: "7+ National Hackathons",
+      category: "competitions",
       description:
-        "Advanced certification in React.js development and best practices",
-      date: "2022",
-      organization: "Meta",
-      link: "https://example.com/cert",
-      icon: FaCertificate,
+        "Participated in 7+ national-level hackathons, collaborating with diverse teams to develop MERN-based full-stack projects",
+      date: "2024 - 2026",
+      organization: "Various Organizations",
+      link: null,
+      icon: FaCode,
       color: "#8B5CF6", // violet
     },
     {
       id: 5,
-      title: "Hackathon Winner",
-      category: "competitions",
-      description: "Led team to victory in 24-hour national hackathon",
-      date: "2022",
-      organization: "HackIndia 2022",
-      link: "https://example.com/hackathon",
-      icon: FaCode,
+      title: "Academic Excellence",
+      category: "awards",
+      description:
+        "Maintaining 9.21 CGPA in BTech Computer Science and achieved 91.18% in Diploma",
+      date: "2021 - Present",
+      organization: "JSPM's RSCOE & Govt. Polytechnic Nashik",
+      link: null,
+      icon: FaMedal,
       color: "#EC4899", // pink
     },
   ];
@@ -203,17 +205,19 @@ const Achievements = () => {
                   </div>
 
                   {/* Link */}
-                  <motion.a
-                    href={achievement.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors duration-300"
-                    style={{ color: achievement.color }}
-                    whileHover={{ x: 5 }}
-                  >
-                    View Certificate
-                    <FaExternalLinkAlt className="text-xs" />
-                  </motion.a>
+                  {achievement.link && (
+                    <motion.a
+                      href={achievement.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium transition-colors duration-300"
+                      style={{ color: achievement.color }}
+                      whileHover={{ x: 5 }}
+                    >
+                      View Post
+                      <FaExternalLinkAlt className="text-xs" />
+                    </motion.a>
+                  )}
 
                   {/* Hover Glow Effect */}
                   <motion.div

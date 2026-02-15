@@ -1,0 +1,73 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#1e293b"/>
+  
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.2" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGradient)"/>
+  
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  
+  <!-- Calendar/Planner Icon -->
+  <g transform="translate(220, 80)">
+    <!-- Calendar -->
+    <rect x="50" y="40" width="260" height="200" rx="15" fill="url(#iconGradient)" opacity="0.9"/>
+    <rect x="50" y="40" width="260" height="50" rx="15" fill="#a855f7"/>
+    
+    <!-- Calendar Header -->
+    <circle cx="90" cy="65" r="8" fill="#ffffff"/>
+    <circle cx="270" cy="65" r="8" fill="#ffffff"/>
+    
+    <!-- Calendar Grid -->
+    <rect x="70" y="110" width="50" height="40" rx="5" fill="#1e293b" opacity="0.6"/>
+    <rect x="130" y="110" width="50" height="40" rx="5" fill="#1e293b" opacity="0.6"/>
+    <rect x="190" y="110" width="50" height="40" rx="5" fill="#1e293b" opacity="0.6"/>
+    <rect x="250" y="110" width="50" height="40" rx="5" fill="#10b981" opacity="0.8"/>
+    
+    <rect x="70" y="160" width="50" height="40" rx="5" fill="#1e293b" opacity="0.6"/>
+    <rect x="130" y="160" width="50" height="40" rx="5" fill="#fbbf24" opacity="0.8"/>
+    <rect x="190" y="160" width="50" height="40" rx="5" fill="#1e293b" opacity="0.6"/>
+    <rect x="250" y="160" width="50" height="40" rx="5" fill="#1e293b" opacity="0.6"/>
+    
+    <!-- AI Sparkle -->
+    <g transform="translate(320, 50)">
+      <circle cx="0" cy="0" r="25" fill="#fbbf24" opacity="0.3"/>
+      <path d="M 0,-15 L 3,-3 L 15,0 L 3,3 L 0,15 L -3,3 L -15,0 L -3,-3 Z" fill="#fbbf24"/>
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">Make My Study Plan</text>
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">AI-Powered Study Planner</text>
+  
+  <!-- Features -->
+  <g transform="translate(120, 380)">
+    <circle cx="0" cy="0" r="4" fill="#a855f7"/>
+    <text x="15" y="5" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">AI Planning</text>
+    
+    <circle cx="140" cy="0" r="4" fill="#a855f7"/>
+    <text x="155" y="5" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">Custom Schedules</text>
+    
+    <circle cx="320" cy="0" r="4" fill="#a855f7"/>
+    <text x="335" y="5" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">Progress Tracking</text>
+    
+    <circle cx="510" cy="0" r="4" fill="#a855f7"/>
+    <text x="525" y="5" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">Difficulty Levels</text>
+  </g>
+</svg>

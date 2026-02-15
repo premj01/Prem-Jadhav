@@ -91,7 +91,7 @@ const About = () => {
                 <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-3 border border-white/10">
                   <div className="aspect-square rounded-xl overflow-hidden">
                     <motion.img
-                      src="/your-photo.jpg" // Replace with your photo path
+                      src="/prem_jadhav_image.png"
                       alt="Prem Jadhav"
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
@@ -119,22 +119,21 @@ const About = () => {
                 </h3>
                 <div className="space-y-6 text-gray-300">
                   <p>
-                    Hello! I'm Prem Jadhav, a passionate full-stack developer
-                    with a keen eye for creating innovative and user-centric web
-                    solutions. I specialize in building scalable applications
-                    that combine beautiful interfaces with robust functionality.
+                    Hello! I'm Prem Jadhav, a passionate MERN Stack Developer from Pune, India. 
+                    I specialize in building full-stack web applications using React, Node.js, 
+                    Express, and MongoDB, with a strong focus on creating scalable and efficient solutions.
                   </p>
                   <p>
-                    My expertise spans the entire development spectrum, from
-                    crafting responsive front-end experiences to architecting
-                    scalable back-end systems. I'm particularly enthusiastic
-                    about emerging technologies and their potential to solve
-                    real-world challenges.
+                    Currently pursuing my Bachelor of Technology in Computer Science at JSPM's Rajashri 
+                    Shahu College of Engineering with a CGPA of 9.21. I've gained hands-on experience 
+                    through my internship at SUMAGO Infotech and have won multiple hackathons including 
+                    Google Cloud's Build and Grow Hackathon and DigitalOcean's Hacktoberfest Hackathon.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new
-                    technologies, contributing to open-source projects, or
-                    sharing knowledge with the developer community.
+                    As the Lead of Web Development at Google Developer Group on Campus (GDGoC), I'm 
+                    passionate about building innovative solutions and sharing knowledge with the 
+                    developer community. I've participated in 7+ national-level hackathons and love 
+                    working on AI-powered applications.
                   </p>
                 </div>
 
@@ -148,12 +147,12 @@ const About = () => {
                     transition={{ delay: 0.2 }}
                   >
                     {[
-                      "React",
+                      "React.js",
                       "Node.js",
-                      "TypeScript",
+                      "Express.js",
                       "MongoDB",
-                      "Next.js",
-                      "Express",
+                      "Spring Boot",
+                      "MySQL",
                     ].map((tech, index) => (
                       <motion.span
                         key={index}
@@ -169,8 +168,8 @@ const About = () => {
 
                 {/* Download CV Button */}
                 <motion.a
-                  href="/your-cv.pdf" // Replace with your CV path
-                  download
+                  href="/Prem_Jadhav_Resume.pdf"
+                  download="Prem_Jadhav_Resume.pdf"
                   className="inline-flex items-center gap-2 px-6 py-3 mt-8 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-medium hover:opacity-90 transition-opacity"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

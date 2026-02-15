@@ -34,16 +34,15 @@ const Technologies = () => {
       color: "#61DAFB",
       skills: [
         { name: "React.js", icon: FaReact, level: 90, color: "#61DAFB" },
-        { name: "Next.js", icon: SiNextdotjs, level: 85, color: "#000000" },
         { name: "JavaScript", icon: SiJavascript, level: 95, color: "#F7DF1E" },
-        { name: "TypeScript", icon: SiTypescript, level: 80, color: "#3178C6" },
+        { name: "HTML", icon: SiJavascript, level: 95, color: "#E34F26" },
+        { name: "CSS", icon: SiJavascript, level: 90, color: "#1572B6" },
         {
           name: "Tailwind CSS",
           icon: SiTailwindcss,
-          level: 90,
+          level: 85,
           color: "#06B6D4",
         },
-        { name: "Framer Motion", icon: SiFramer, level: 75, color: "#FF0055" },
       ],
     },
     {
@@ -51,10 +50,11 @@ const Technologies = () => {
       icon: FaNodeJs,
       color: "#339933",
       skills: [
-        { name: "Node.js", icon: FaNodeJs, level: 85, color: "#339933" },
-        { name: "Express.js", icon: SiExpress, level: 85, color: "#000000" },
-        { name: "Python", icon: FaPython, level: 80, color: "#3776AB" },
-        { name: "Prisma", icon: SiPrisma, level: 75, color: "#2D3748" },
+        { name: "Node.js", icon: FaNodeJs, level: 90, color: "#339933" },
+        { name: "Express.js", icon: SiExpress, level: 90, color: "#000000" },
+        { name: "Spring Boot", icon: SiExpress, level: 80, color: "#6DB33F" },
+        { name: "Spring MVC", icon: SiExpress, level: 75, color: "#6DB33F" },
+        { name: "Spring JPA", icon: SiExpress, level: 75, color: "#6DB33F" },
       ],
     },
     {
@@ -62,10 +62,10 @@ const Technologies = () => {
       icon: SiMongodb,
       color: "#47A248",
       skills: [
-        { name: "MongoDB", icon: SiMongodb, level: 85, color: "#47A248" },
-        { name: "PostgreSQL", icon: SiPostgresql, level: 80, color: "#4169E1" },
-        { name: "Redis", icon: SiRedis, level: 70, color: "#DC382D" },
-        { name: "Firebase", icon: SiFirebase, level: 80, color: "#FFCA28" },
+        { name: "MongoDB", icon: SiMongodb, level: 90, color: "#47A248" },
+        { name: "MySQL", icon: SiPostgresql, level: 85, color: "#4479A1" },
+        { name: "Oracle SQL", icon: SiPostgresql, level: 75, color: "#F80000" },
+        { name: "Mongoose ODM", icon: SiMongodb, level: 85, color: "#880000" },
       ],
     },
     {
@@ -74,9 +74,11 @@ const Technologies = () => {
       color: "#F05032",
       skills: [
         { name: "Git", icon: FaGitAlt, level: 90, color: "#F05032" },
-        { name: "Docker", icon: FaDocker, level: 75, color: "#2496ED" },
-        { name: "AWS", icon: FaAws, level: 70, color: "#232F3E" },
-        { name: "Figma", icon: FaFigma, level: 80, color: "#F24E1E" },
+        { name: "GitHub", icon: FaGitAlt, level: 90, color: "#181717" },
+        { name: "Postman", icon: SiExpress, level: 85, color: "#FF6C37" },
+        { name: "Java", icon: SiJavascript, level: 80, color: "#007396" },
+        { name: "Python", icon: FaPython, level: 75, color: "#3776AB" },
+        { name: "C++", icon: SiJavascript, level: 70, color: "#00599C" },
       ],
     },
   ];
